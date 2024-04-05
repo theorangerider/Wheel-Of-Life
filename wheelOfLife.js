@@ -99,6 +99,18 @@
           chart.updateSeries(chartSeries, false);
         };
         section.append(input);
+
+        // Numeric scale container
+        const numbersContainer = document.createElement("div");
+        numbersContainer.className = "slider-numbers";
+        for (let num = 1; num <= 10; num++) {
+            const number = document.createElement("span");
+            number.textContent = num;
+            number.className = "slider-number"; // This class is for styling
+            numbersContainer.appendChild(number);
+        }
+        section.appendChild(numbersContainer);
+
         // Description
         const description = document.createElement("p");
         description.innerText = c.description;

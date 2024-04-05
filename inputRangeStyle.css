@@ -114,3 +114,20 @@ input[type='range']:focus {
   outline: none;
   box-shadow: none;
 }
+
+/* Styles for the numeric scale container */
+.slider-numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px; /* Adjust the space between the slider and the numeric scale as needed */
+}
+
+/* Styles for individual numbers */
+.slider-number {
+  flex-grow: 1;
+  text-align: center;
+  user-select: none; /* Prevents the numbers from being selected */
+  font-size: 0.75em; /* Adjust based on your preference */
+  color: #2c2c2b; /* Or any color that fits your design */
+}
+
